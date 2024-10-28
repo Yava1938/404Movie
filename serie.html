@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/series.js" defer></script>
+    <title>Movies- Ebac</title>
+</head>
+<body>
+    <header class="header">
+        <i class="header__logo">
+            <h2 class="header__logo_txt">404Movie</h2>
+        </i>  
+        <div class="header__categories">
+            <ul class="categories__list">
+                <li class="categories__item">Inicio</li>
+                <li class="categories__item">Contacto</li>
+            </ul>
+        </div>      
+    </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__title">Lleva el cine a casa</h2>
+            <p class="banner__text">Disfruta la comodidad y entretenimiento</p>
+        </section>
+
+        <section class="main__serie">
+            <article class="serie__image">
+                <img src="" class="serie__img">
+            </article>
+            <article class="serie__info">
+                <table class="serie__table">
+        <tbody class="serie__content">
+            <tr>
+                <td class="serie__base">Nombre</td>
+                <td class="serie__var var__name"></td>
+            </tr>
+            <tr>
+                <td class="serie__base">Idioma</td>
+                <td class="serie__var var__lenguaje"></td>
+            </tr>
+            <tr>
+                <td class="serie__base">Genero</td>
+                <td class="serie__var var__gen"></td>
+            </tr>
+            <tr>
+                <td class="serie__base">Status</td>
+                <td class="serie__var var__status"></td>
+            </tr>
+            <tr>
+                <td class="serie__base">Plataforma</td>
+                <td class="serie__var var__platf"></td>
+            </tr>
+        </tbody>
+    </table>
+            </article>
+        </section>
+
+        <section class="content">
+            <table class="cap__table">
+                <caption class="cap__title">Capitulos</caption>
+                <thead class="cap__cabeceras">
+                    <tr>
+                        <th class="cap__columna">cap</th>
+                        <th class="cap__columna">Nombre</th>
+                        <th class="cap__columna">sinopsis</th>
+                        <th class="cap__columna">Calificación</th>
+                    </tr>
+                </thead>
+                <tbody class="cap__content">
+                </tbody>
+            </table>
+        </section>
+
+
+        <article class="form" id="contacto-section">
+            <h2 class="title__form">CONTACTO</h2>
+            <form>
+                <input type="text"  placeholder="Nombre" Value="Yael" class="inpu">
+                <input type="text" placeholder="No. Orden">
+                <textarea cols="30" rows="10" placeholder="Comentarios"></textarea>
+                <input type="button" value="ENVIAR">
+            </form>
+        </article>
+    </main>
+</body>
+</html>
