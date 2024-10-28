@@ -1,0 +1,222 @@
+.banner {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend", sans-serif;
+}
+
+.header {
+  width: 100%;
+  color: #fff;
+  background-color: #4d8f81;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__logo {
+  padding-left: 25px;
+}
+.header .header__categories .categories__list {
+  display: flex;
+  list-style: none;
+  padding: 0 50px;
+  margin: 0;
+}
+.header .header__categories .categories__list .categories__item {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header .header__categories .categories__list .categories__item:first-child {
+  margin-left: 0px;
+}
+
+.banner {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 130px 0;
+  background-image: url("../img/madame-web-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  transition: background-image 0.5s ease;
+}
+.banner::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+.banner > .banner__title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px;
+}
+.banner > .banner__text {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.main__Title {
+  padding: 30px 12% 0;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.main > .item {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+  padding: 0 0;
+  position: relative;
+  border-radius: 5px 5px 10px 10px;
+  border: 1px solid;
+  margin: 8px 8px;
+}
+.main > .item > .item__img {
+  width: 100%;
+  height: 300px;
+}
+.main > .item > .item__name {
+  font-size: 17px;
+  font-weight: 500;
+}
+.main > .item > .products__price {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.form {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.form > .title__form {
+  text-align: center;
+}
+
+form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 18px 15px;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: 2px solid #fff;
+  transition: all 0.15s linear;
+}
+input[type=text].new-outline, textarea.new-outline {
+  border: 2px solid blueviolet;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.main__serie {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main__serie .serie__image {
+  width: 40%;
+}
+.main__serie .serie__image .serie__img {
+  width: 100%;
+}
+.main__serie .serie__info {
+  width: 55%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.main__serie .serie__info .serie__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.main__serie .serie__info .serie__table .serie__content tr {
+  height: 110px;
+  border: 1px solid;
+}
+.main__serie .serie__info .serie__table .serie__content tr .serie__base {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+  color: #595e63;
+}
+.main__serie .serie__info .serie__table .serie__content tr .serie__var {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+.content .cap__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.content .cap__table .cap__title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.content .cap__table .cap__cabeceras {
+  background-color: #007bff;
+  color: white;
+}
+.content .cap__table .cap__cabeceras .cap__columna {
+  padding: 10px;
+  text-align: left;
+}
+.content .cap__table .cap__content .cap__img {
+  width: 200px;
+}
+.content .cap__table .cap__content .cap__dato {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.content .vacio {
+  background-color: #9bbd4c;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  color: #fff;
+}/*# sourceMappingURL=styles.css.map */
